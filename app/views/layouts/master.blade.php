@@ -70,18 +70,20 @@
 		</aside>
 	</main>
 	<footer class="row">
-		<section class="large-12 columns">
+		<section class="large-12 columns contact">
 			<h3>Contact Us</h3>
 			<ul>
 				<li>Phone: (662)287-8829</li>
 				<li>Fax: (662)286-3354</li>
 				<li>Email: <a href = "mailto:jcooper@raycocopiers.com">info@raycocopiers.com</a></li>
 				<li>2199 Hwy 72 East; Corinth, MS 38834</li>
-				<li><small>&copy; Copyright  by Phillip Jackson</small></li>
 			</ul>
 
-			<a href="{{ route('home') }}">Home</a> - <a href="{{ route('products') }}">Products</a> - <a href="http://www.raycocopiers.com/comingsoon.html">Services</a> - <a href="{{ route('customers') }}">Customers</a> - <a href="{{ route('about') }}">About Us</a>
+			<nav class="footer-menu">
+				<a href="{{ route('home') }}">Home</a> - <a href="{{ route('products') }}">Products</a> - <a href="http://www.raycocopiers.com/comingsoon.html">Services</a> - <a href="{{ route('customers') }}">Customers</a> - <a href="{{ route('about') }}">About Us</a>
+			</nav>
 		</section>
+		<small>&copy; Copyright  by Phillip Jackson</small>
 	</footer>
 <!-- End Main Content/Container -->
 

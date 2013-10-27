@@ -7,9 +7,13 @@
 // Comment out this import if you are customizing you imports below
 // @import "foundation";
 
+// Compass Mixin Imports
+@import "compass/css3";
+
 // My Personal Styles
 @import "header";
 @import "misc";
+@import "footer";
 @import url(http://fonts.googleapis.com/css?family=Arimo:700);
 
 @import "foundation/components/global"; // *always required

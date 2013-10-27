@@ -437,6 +437,45 @@ h3 {
   font-family: 'Arimo', sans-serif;
 }
 
+/* line 1, ../sass/_footer.scss */
+.contact {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aeaeae), color-stop(100%, #3e3e3e));
+  background: -webkit-linear-gradient(top, #aeaeae, #3e3e3e);
+  background: -moz-linear-gradient(top, #aeaeae, #3e3e3e);
+  background: -o-linear-gradient(top, #aeaeae, #3e3e3e);
+  background: linear-gradient(top, #aeaeae, #3e3e3e);
+}
+/* line 3, ../sass/_footer.scss */
+.contact a {
+  color: #fff;
+}
+/* line 5, ../sass/_footer.scss */
+.contact a:hover {
+  color: #333;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+/* line 10, ../sass/_footer.scss */
+.contact li {
+  list-style: none;
+  font-size: .95em;
+}
+
+/* line 16, ../sass/_footer.scss */
+.footer-menu {
+  padding-bottom: .25em;
+}
+/* line 18, ../sass/_footer.scss */
+.footer-menu a:hover {
+  color: #aeaeae;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
 /* line 264, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
 *,
 *:before,
