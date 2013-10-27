@@ -1,0 +1,9 @@
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3, PHP5.4.3
+  Components: Zepto v1.0-1, Modernizer.custom, Compass v0.12.2, normalize.css v2.1.1, Foundation v4.1.3
+  Software: Sublime Text 2, Git
+
+/* Author */
+  Phillip Jackson: Twitter(@unisys12), Google+(+Phillip Jackson)
