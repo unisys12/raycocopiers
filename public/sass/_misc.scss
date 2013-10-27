@@ -1,0 +1,7 @@
+/**
+ * A Fix for Webkit font smoothing issue
+ */
+h3 {
+	//-webkit-text-stroke: .5px rgba(0,0,0,0.3);
+	font-family: 'Arimo', sans-serif;
+}
