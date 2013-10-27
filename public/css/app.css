@@ -426,10 +426,6 @@ figure {
 /* line 9, ../sass/_header.scss */
 .menu li {
   margin-top: 1em;
-}
-
-/* line 13, ../sass/_header.scss */
-li {
   list-style: none;
 }
 
