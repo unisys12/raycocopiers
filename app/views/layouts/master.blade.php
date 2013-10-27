@@ -40,7 +40,7 @@
 			</figure>
 		</section>
 		<nav class="large-6 columns">
-			<ul class="inline-list">
+			<ul class="inline-list menu">
 				<li><a href="{{ route('home') }}">Home</a></li>
 				<li><a href="{{ route('products') }}">Products</a>
 					<!-- <ul class="subMenu">
