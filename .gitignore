@@ -224,3 +224,9 @@ composer.phar
 composer.lock
 .DS_Store
 Thumbs.db
+
+######
+# SCSS
+######
+.sass-cache
+
