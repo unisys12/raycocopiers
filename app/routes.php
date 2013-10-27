@@ -11,7 +11,22 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/about', array('as' => 'about', function()
 {
-	return View::make('hello');
-});
+	return View::make('about');
+}));
+
+Route::get('/customers', array('as' => 'customers', function()
+{
+	return View::make('customers.index');
+}));
+
+Route::get('/products', array('as' => 'products', function()
+{
+	return View::make('products.index');
+}));
+
+Route::get('/', array('as' => 'home', function()
+{
+	return View::make('index');
+}));

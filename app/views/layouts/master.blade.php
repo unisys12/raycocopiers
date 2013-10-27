@@ -24,7 +24,7 @@
 
 		<!-- Check for Zepto support, load jQuery if necessary -->
 		<script>
-		  document.write('<script src=../js/vendor/'
+		  document.write('<script src= ../public/js/vendor/'
 		    + ('__proto__' in {} ? 'zepto' : 'jquery')
 		    + '.js><\/script>');
 		</script>
