@@ -444,11 +444,11 @@ h3 {
 
 /* line 1, ../sass/_footer.scss */
 .contact {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aeaeae), color-stop(100%, #3e3e3e));
-  background: -webkit-linear-gradient(top, #aeaeae, #3e3e3e);
-  background: -moz-linear-gradient(top, #aeaeae, #3e3e3e);
-  background: -o-linear-gradient(top, #aeaeae, #3e3e3e);
-  background: linear-gradient(top, #aeaeae, #3e3e3e);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 82, 156, 0.5)), color-stop(100%, #3e3e3e));
+  background: -webkit-linear-gradient(top, rgba(0, 82, 156, 0.5), #3e3e3e);
+  background: -moz-linear-gradient(top, rgba(0, 82, 156, 0.5), #3e3e3e);
+  background: -o-linear-gradient(top, rgba(0, 82, 156, 0.5), #3e3e3e);
+  background: linear-gradient(top, rgba(0, 82, 156, 0.5), #3e3e3e);
 }
 /* line 3, ../sass/_footer.scss */
 .contact a {
