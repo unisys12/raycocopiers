@@ -8,7 +8,9 @@
 		<br>
 		<br>
 		<article class="content">
-			<p>Even more useless info!</p>
+			<ul>
+				<li><a href="{{ route('meter') }}">Submit Meter Reading</a></li>
+			</ul>
 		</article>
 	</header>
 </section>
