@@ -62,11 +62,12 @@
 
 		@yield('content')
 
-		<aside class="large-4 columns">
+		<aside class="large-4 columns posts">
 			<h3>NEWS</h3>
-			<h4>7/3/2012</h4><strong>- </strong>Welcome to the new Rayco Inc website. I have put a lot of the things that I have recently learned
-			into this site and will be adding more as time goes on. The main section I will be working on is the Customer section. Take a look around
-			and be on the look out for more updates coming soon.
+			<h4>7/3/2012</h4>
+			<hr>
+			<p>Welcome to the new Rayco Inc website. I have put a lot of the things that I have recently learned
+			into this site and will be adding more as time goes on. The main section I will be working on is the Customer section. Take a look around and be on the look out for more updates coming soon.</p>
 		</aside>
 	</main>
 	<footer class="row">

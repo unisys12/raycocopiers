@@ -437,6 +437,11 @@ h3 {
   font-family: 'Arimo', sans-serif;
 }
 
+/* line 1, ../sass/_content.scss */
+.content, .posts {
+  text-align: justify;
+}
+
 /* line 1, ../sass/_footer.scss */
 .contact {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aeaeae), color-stop(100%, #3e3e3e));
