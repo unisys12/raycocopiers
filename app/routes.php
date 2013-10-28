@@ -16,10 +16,7 @@ Route::get('/about', array('as' => 'about', function()
 	return View::make('about');
 }));
 
-Route::get('/customers', array('as' => 'customers', function()
-{
-	return View::make('customers.index');
-}));
+Route::get('/customers', array('as' => 'customers', 'uses' => 'CustomerController@showIndex'));
 
 Route::get('/products', array('as' => 'products', function()
 {
