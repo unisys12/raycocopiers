@@ -8,7 +8,7 @@
 			<br>
 		</header>
 
-		<article>
+		<article class="content">
 			<p>
 				<em>Rayco Inc</em> has offices in Corinth, Oxford and Tupelo Mississippi. We are
 				Mississippi owned company that started in 1994. There are a lot of changes coming from
@@ -20,7 +20,7 @@
 				in Mississippi.
 			</p>
 			<p>
-				Please read all documents you recieve very carefully. If we can be of any assistance, please
+				Please read all documents you receive very carefully. If we can be of any assistance, please
 				call us at 1-888-873-5789.
 			</p>
 
