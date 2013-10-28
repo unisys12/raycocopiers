@@ -7,4 +7,9 @@ class CustomerController extends BaseController {
 		return View::make('customers.index');
 	}
 
+	public function showMeterForm()
+	{
+		return View::make('customers.meterform');
+	}
+
 }
