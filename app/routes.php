@@ -16,6 +16,8 @@ Route::get('/about', array('as' => 'about', function()
 	return View::make('about');
 }));
 
+Route::get('/customers/metersubmit', array('as' => 'metersubmit', 'uses' => 'CustomerController@meterSubmit'));
+
 Route::get('/customers/meter', array('as' => 'meter', 'uses' => 'CustomerController@showMeterForm' ));
 
 Route::get('/customers', array('as' => 'customers', 'uses' => 'CustomerController@showIndex'));
