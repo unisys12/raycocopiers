@@ -7,12 +7,12 @@
 		<h3>Customers and Stuff</h3>
 		<br>
 		<br>
-		<article class="content">
-			<ul>
-				<li><a href="{{ route('meter') }}">Submit Meter Reading</a></li>
-			</ul>
-		</article>
 	</header>
+	<nav class="content">
+		<ul>
+			<li><a href="{{ route('meter') }}">Submit Meter Reading</a></li>
+		</ul>
+	</nav>
 </section>
 
 @stop
