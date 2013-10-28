@@ -8,10 +8,15 @@
 		<br>
 	</header>
 	<article class="content">
-		{{ Form::open(array('url' => 'customers/submit')) }}
+		{{ Form::open(array('route' => 'metersubmit')) }}
 
 		<ul>
 			<li>
+				@if ($errors->has('CompanyName'))
+				{
+					<p>$error->first('CompanyName')</p>
+				}
+				@endif
 				{{ Form::label('CompanyName', 'Company Name') }}
 				{{ Form::text('CompanyName') }}
 			</li>
