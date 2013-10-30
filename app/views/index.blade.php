@@ -4,8 +4,6 @@
 	<section class="large-8 columns">
 		<header>
 			<h3>Rayco Inc</h3>
-			<br>
-			<br>
 		</header>
 
 		<article class="content">

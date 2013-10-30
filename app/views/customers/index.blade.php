@@ -5,8 +5,6 @@
 <section class="large-8 columns">
 	<header>
 		<h3>Customers and Stuff</h3>
-		<br>
-		<br>
 	</header>
 	<nav class="content">
 		<ul>

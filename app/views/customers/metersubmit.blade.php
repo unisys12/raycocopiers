@@ -5,8 +5,6 @@
 <section class="large-8 columns">
 	<header>
 		<h3>Thanks for submitting the meter for your machine!</h3>
-		<br>
-		<br>
 	</header>
 	<nav class="content">
 

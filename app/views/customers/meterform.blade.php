@@ -4,8 +4,6 @@
 <section class="large-8 columns">
 	<header>
 		<h3>Submit Meter Reading</h3>
-		<br>
-		<br>
 	</header>
 	<article class="content">
 		{{ Form::open(array('route' => 'metersubmit')) }}
