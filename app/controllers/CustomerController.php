@@ -14,15 +14,15 @@ class CustomerController extends BaseController {
 
 	public function meterSubmit()
 	{
-		//$data = Input::all();
+		$data = Input::all();
 
 		$rules = array(
-			'CNumber'	  => 'required|numeric|min:4|max:4',
+			'CNumber'	  => 'required|numeric|min:4',
 			'colorTotal'  => 'numeric',
 			'bwTotal'	  => 'required|numeric'
 			);
 
-		$validator = Validator::make(Input::all(), $rules);
+		$validator = Validator::make($data, $rules);
 
 		if($validator->fails())
 		{
