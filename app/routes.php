@@ -11,12 +11,14 @@
 |
 */
 
+// About route (http://www.raycocopiers.com/about)
 Route::get('/about', array('as' => 'about', function()
 {
 	return View::make('about');
 }));
 
 /* Customer Routes
+ * (http://www.raycocopiers.com/customers)
  * ****************/
 Route::post('/customers/metersubmit', array('as' => 'metersubmited', 'uses' => 'CustomerController@meterSubmit'));
 
@@ -27,12 +29,14 @@ Route::get('/customers/meter', array('as' => 'meter', 'uses' => 'CustomerControl
 Route::get('/customers', array('as' => 'customers', 'uses' => 'CustomerController@showIndex'));
 
 /* Product Routes
+ * (http://www.raycocopiers.com/products)
  * ***************/
 Route::get('/products', array('as' => 'products', function()
 {
 	return View::make('products.index');
 }));
 
+// Index Route (http://www.raycocopiers.com)
 Route::get('/', array('as' => 'home', function()
 {
 	return View::make('index');
