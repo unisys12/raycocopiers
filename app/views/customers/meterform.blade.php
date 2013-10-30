@@ -11,24 +11,18 @@
 		{{ Form::open(array('route' => 'metersubmit')) }}
 
 		<ul>
-			<li>
-				@if ($errors->has('CompanyName'))
-				{
-					<p>$error->first('CompanyName')</p>
-				}
-				@endif
-				{{ Form::label('CompanyName', 'Company Name') }}
-				{{ Form::text('CompanyName') }}
-			</li>
+
 			<li>
 				{{ Form::label('CNumber', 'C Number') }}
 				{{ Form::text('CNumber') }}
 			</li>
 			<li>
+				{{ $errors->first('colorTotal') }}
 				{{ Form::label('colorTotal', 'Color Total') }}
 				{{ Form::text('colorTotal') }}
 			</li>
 			<li>
+				{{ $errors->first('bwTotal') }}
 				{{ Form::label('bwTotal', 'Black&White Total') }}
 				{{ Form::text('bwTotal') }}
 			</li>

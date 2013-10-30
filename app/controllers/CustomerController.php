@@ -14,23 +14,22 @@ class CustomerController extends BaseController {
 
 	public function meterSubmit()
 	{
+		//$data = Input::all();
+
 		$rules = array(
-			'companyName' => 'required|alpha',
-			'CNumber'	  => 'required|numeric',
+			'CNumber'	  => 'required|numeric|min:4|max:4',
 			'colorTotal'  => 'numeric',
 			'bwTotal'	  => 'required|numeric'
 			);
 
-		$validate = Validator::make(Input::all(), $rules);
+		$validator = Validator::make(Input::all(), $rules);
 
-		if($validate->fails())
+		if($validator->fails())
 		{
 			$messages = $validator->messages();
-			return Redirect::to('customers/meter')->withErrors($validate);
-		}else{
-			return View::make('customers.metersubmit');
+			return View::make('customers.meterform')->withErrors($messages);
 		}
-
+		return View::make('customers.metersubmit');
 	}
 
 }
