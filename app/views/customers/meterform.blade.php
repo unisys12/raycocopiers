@@ -12,20 +12,24 @@
 
 		<ul>
 			<li>
-				{{ $errors->first('CNumber') }}
 				{{ Form::label('CNumber', 'C Number') }}
 				{{ Form::text('CNumber') }}
 			</li>
+			{{ $errors->first('CNumber', '<span class="error"> :message </span>') }}
+
 			<li>
-				{{ $errors->first('colorTotal') }}
+
 				{{ Form::label('colorTotal', 'Color Total') }}
 				{{ Form::text('colorTotal') }}
 			</li>
+			{{ $errors->first('colorTotal', '<span class="error"> :message </span>') }}
+
 			<li>
-				{{ $errors->first('bwTotal') }}
 				{{ Form::label('bwTotal', 'Black&White Total') }}
 				{{ Form::text('bwTotal') }}
 			</li>
+			{{ $errors->first('bwTotal', '<span class="error"> :message </span>') }}
+
 			<li>{{ Form::submit() }}</li>
 		</ul>
 
