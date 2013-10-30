@@ -11,8 +11,8 @@
 		{{ Form::open(array('route' => 'metersubmit')) }}
 
 		<ul>
-
 			<li>
+				{{ $errors->first('CNumber') }}
 				{{ Form::label('CNumber', 'C Number') }}
 				{{ Form::text('CNumber') }}
 			</li>
