@@ -16,6 +16,8 @@ Route::get('/about', array('as' => 'about', function()
 	return View::make('about');
 }));
 
+/* Customer Routes
+ * ****************/
 Route::post('/customers/metersubmit', array('as' => 'metersubmited', 'uses' => 'CustomerController@meterSubmit'));
 
 Route::post('/customers/metersubmit', array('as' => 'metersubmit', 'uses' => 'CustomerController@meterSubmit'));
@@ -24,6 +26,8 @@ Route::get('/customers/meter', array('as' => 'meter', 'uses' => 'CustomerControl
 
 Route::get('/customers', array('as' => 'customers', 'uses' => 'CustomerController@showIndex'));
 
+/* Product Routes
+ * ***************/
 Route::get('/products', array('as' => 'products', function()
 {
 	return View::make('products.index');
