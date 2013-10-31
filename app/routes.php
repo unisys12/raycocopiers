@@ -31,10 +31,7 @@ Route::get('/customers', array('as' => 'customers', 'uses' => 'CustomerControlle
 /* Product Routes
  * (http://www.raycocopiers.com/products)
  * ***************/
-Route::get('/products', array('as' => 'products', function()
-{
-	return View::make('products.index');
-}));
+Route::get('/products', array('as' => 'products', 'uses' => 'ProductController@index'));
 
 // Index Route (http://www.raycocopiers.com)
 Route::get('/', array('as' => 'home', function()
