@@ -53,7 +53,7 @@ class ProductController extends BaseController {
 		if($validator->fails())
 		{
 			$messages = $validator->messages();
-			return View::make('products.create')->withErrors($messages);
+			return Redirect::to('products/create')->withErrors($messages)->withInput();
 		}
 
 		$product = Product::create($data);
