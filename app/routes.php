@@ -31,6 +31,11 @@ Route::get('/customers', array('as' => 'customers', 'uses' => 'CustomerControlle
 /* Product Routes
  * (http://www.raycocopiers.com/products)
  * ***************/
+Route::get('/products/store', array('as' => 'storedproduct', 'uses' => 'ProductController@store'));
+Route::post('/products/store', array('as' => 'storeproduct', 'uses' => 'ProductController@store'));
+
+Route::get('/products/create', array('as' => 'createProduct', 'uses' => 'ProductController@create'));
+
 Route::get('/products', array('as' => 'products', 'uses' => 'ProductController@index'));
 
 // Index Route (http://www.raycocopiers.com)
