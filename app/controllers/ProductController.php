@@ -37,7 +37,8 @@ class ProductController extends BaseController {
 
 		$rules = array(
 			'name' 			=> 'required|alpha_num',
-			'colortype'		=> 'required',
+			'color_class'	=> 'required',
+			'family'		=> 'required|alpha',
 			'ppmbw'			=> 'required|integer',
 			'ppmcolor'		=> 'integer',
 			'comment_one' 	=> 'required',

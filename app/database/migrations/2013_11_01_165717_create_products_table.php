@@ -16,7 +16,8 @@ class CreateProductsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->string('colortype');
+			$table->string('color_class');
+			$table->string('family');
 			$table->integer('ppmbw');
 			$table->integer('ppmcolor');
 			$table->string('comment_one');

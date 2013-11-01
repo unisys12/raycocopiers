@@ -13,9 +13,26 @@
 	{{ Form::text('name') }}
 	{{ $errors->first('name', '<span class="error"> :message </span>') }}
 
-	{{ Form::label('colortype', 'Color / Black & White') }}
-	{{ Form::select('colortype', array( ''=>'', 'color' => 'Color', 'bw' => 'Black & White' )) }}
-	{{ $errors->first('colortype', '<span class="error"> :message </span>') }}
+	{{ Form::label('color_class', 'Color / Black & White') }}
+	{{ Form::select('color_class',
+		array(
+		''=>'',
+		'color' => 'Color',
+		'bw' => 'Black & White'
+		)) }}
+	{{ $errors->first('color_class', '<span class="error"> :message </span>') }}
+
+	{{ Form::label('family', 'Product Family') }}
+	{{ Form::select('family',
+		array(
+		'' => '',
+		'mfp' 			=> 'MFP',
+		'printer' 		=> 'Printer',
+		'wide format' 	=> 'Wide Format',
+		'duplicator' 	=> 'Duplicator',
+		'scanner'		=> 'Scanner'
+		)) }}
+	{{ $errors->first('family', '<span class="error"> :message </span>') }}
 
 	{{ Form::label('ppmbw', 'Black & White Pages Per Minute') }}
 	{{ Form::text('ppmbw') }}

@@ -4,7 +4,8 @@ class Product extends Eloquent {
 
 	protected $fillable = array(
 		'name',
-		'colortype',
+		'color_class',
+		'family',
 		'ppmbw',
 		'ppmcolor',
 		'comment_one',
