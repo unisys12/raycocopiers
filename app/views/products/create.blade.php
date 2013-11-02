@@ -9,9 +9,9 @@
 
 	{{ Form::open(array('route' => 'storeproduct')) }}
 
-	{{ Form::label('name', 'Model Name') }}
-	{{ Form::text('name') }}
-	{{ $errors->first('name', '<span class="error"> :message </span>') }}
+	{{ Form::label('model', 'Model Name') }}
+	{{ Form::text('model') }}
+	{{ $errors->first('model', '<span class="error"> :message </span>') }}
 
 	{{ Form::label('color_class', 'Color / Black & White') }}
 	{{ Form::select('color_class',

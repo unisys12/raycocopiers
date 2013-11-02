@@ -3,7 +3,7 @@
 class Product extends Eloquent {
 
 	protected $fillable = array(
-		'name',
+		'model',
 		'color_class',
 		'family',
 		'ppmbw',

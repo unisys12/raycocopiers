@@ -36,7 +36,7 @@ class ProductController extends BaseController {
 		$data = Input::all();
 
 		$rules = array(
-			'name' 			=> 'required|alpha_num',
+			'model'			=> 'required|alpha_num',
 			'color_class'	=> 'required',
 			'family'		=> 'required|alpha',
 			'ppmbw'			=> 'required|integer',
