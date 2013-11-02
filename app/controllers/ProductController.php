@@ -2,6 +2,11 @@
 
 class ProductController extends BaseController {
 
+	public function __construct(Product $product)
+	{
+		$this->product = $product;
+	}
+
 	/**
 	 * Display the products index page, which lists the different families of products.
 	 *
@@ -70,6 +75,12 @@ class ProductController extends BaseController {
 	public function show($id)
 	{
 		//
+	}
+
+	public function showFamily($family)
+	{
+		$product = $this->product->getFamily($family);
+		return View::make('products.family')->with(array('product' => $product, 'family' => $family));
 	}
 
 	/**
