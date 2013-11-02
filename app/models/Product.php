@@ -15,4 +15,28 @@ class Product extends Eloquent {
 		'comment_five'
 		);
 
+	public function getAll()
+	{
+		$products = Product::all();
+		return $products;
+	}
+
+	public function getFamily($family)
+	{
+		$products = Product::where('family', '==', $family);
+		return $products;
+	}
+
+	public function getColorClass($color_class)
+	{
+		$products = Product::where('color_class', '==', $color_class);
+		return $products;
+	}
+
+	public function getModel($model)
+	{
+		$products = Product::where('name', '==', $model);
+		return $products;
+	}
+
 }
