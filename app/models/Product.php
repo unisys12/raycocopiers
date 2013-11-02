@@ -2,17 +2,8 @@
 
 class Product extends Eloquent {
 
-	protected $fillable = array(
-		'model',
-		'color_class',
-		'family',
-		'ppmbw',
-		'ppmcolor',
-		'comment_one',
-		'comment_two',
-		'comment_three',
-		'comment_four',
-		'comment_five'
+	protected $guarded = array(
+		'id', 'created_at', 'updated_at'
 		);
 
 	public function getAll()
@@ -23,19 +14,21 @@ class Product extends Eloquent {
 
 	public function getFamily($family)
 	{
-		$products = Product::where('family', '==', $family);
-		return $products;
+
+		//echo $family . ' From Model';
+		$family = DB::table('products')->where('family', 'mfp')->get();
+		return $family;
 	}
 
 	public function getColorClass($color_class)
 	{
-		$products = Product::where('color_class', '==', $color_class);
+		$products = Product::where('color_class', '=', $color_class);
 		return $products;
 	}
 
 	public function getModel($model)
 	{
-		$products = Product::where('name', '==', $model);
+		$products = Product::where('name', '=', $model);
 		return $products;
 	}
 
