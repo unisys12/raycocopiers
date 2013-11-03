@@ -80,7 +80,9 @@ class ProductController extends BaseController {
 	public function showFamily($family)
 	{
 		$product = $this->product->getFamily($family);
-		return View::make('products.family')->with(array('product' => $product, 'family' => $family));
+		return View::make('products.family')
+			->with('product', $product)
+			->with('family', $family);
 	}
 
 	/**
