@@ -8,11 +8,11 @@
 	</header>
 	<nav class="ul">
 		<li><a href="/products/bw/mfp">Black and White MPFs</a></li>
-		<li><a href="#">Black and White Printers</a></li>
-		<li><a href="#">Color MFPs</a></li>
-		<li><a href="#">Color Printers</a></li>
-		<li><a href="#">Wide Formats</a></li>
-		<li><a href="#">Duplicators</a></li>
+		<li><a href="/products/bw/printer">Black and White Printers</a></li>
+		<li><a href="/products/color/mfp">Color MFPs</a></li>
+		<li><a href="/products/color/printer">Color Printers</a></li>
+		<li><a href="/products/wideformat">Wide Formats</a></li>
+		<li><a href="/products/duplicator">Duplicators</a></li>
 	</nav>
 </section>
 
