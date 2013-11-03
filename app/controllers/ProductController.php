@@ -85,6 +85,15 @@ class ProductController extends BaseController {
 			->with('family', $family);
 	}
 
+	public function showModel($family, $model)
+	{
+		$product = $this->product->where('family', '=', $family)->where('name', '=', $model)->get();
+		return View::make('products.model')/*->with('product', $product)*/
+			->with('family', $family)
+			->with('model', $model)
+			->with('product', $product);
+	}
+
 	/**
 	 * Show the form for editing the specified resource.
 	 *
