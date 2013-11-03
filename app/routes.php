@@ -31,10 +31,16 @@ Route::get('/customers', array('as' => 'customers', 'uses' => 'CustomerControlle
 /* Product Routes
  * (http://www.raycocopiers.com/products)
  * ***************/
-Route::get('/products', array('as' => 'products', function()
-{
-	return View::make('products.index');
-}));
+Route::get('/products/{family}/{model}', array('uses' => 'ProductController@showModel'));
+
+Route::get('/products/{family}', array('uses' => 'ProductController@showFamily'));
+
+Route::get('/products/store', array('as' => 'storedproduct', 'uses' => 'ProductController@store'));
+Route::post('/products/store', array('as' => 'storeproduct', 'uses' => 'ProductController@store'));
+
+Route::get('/products/create', array('as' => 'createProduct', 'uses' => 'ProductController@create'));
+
+Route::get('/products', array('as' => 'products', 'uses' => 'ProductController@index'));
 
 // Index Route (http://www.raycocopiers.com)
 Route::get('/', array('as' => 'home', function()
