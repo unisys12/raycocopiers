@@ -4,13 +4,13 @@
 
 <section class="large-8 columns">
 	<header>
-		<h3> {{ strtoupper($family) }} </h3>
+		<h3> {{ strtoupper($color_class) ." ". strtoupper($family) }} </h3>
 	</header>
 	<article class="family">
 		@foreach($product as $item)
-		<img src= "/raycocopiers/public/images/products/{{ $item->family }}/{{ $item->color_class }}/{{ $item->name }}.jpg" alt="{{ $item->name }}">
-		<h6>{{ $item->name }}</h6>
-		<a href="{{ $item->family }}/{{ $item->name }}">Want more info?</a>
+		<img src= "/raycocopiers/public/images/products/{{ $item->family }}/{{ $item->color_class }}/{{ $item->model }}.jpg" alt="{{ $item->model }}">
+		<h6>{{ $item->model }}</h6>
+		<a href="{{ $item->family }}/{{ $item->model }}">Want more info?</a>
 		<hr>
 		@endforeach
 	</article>
