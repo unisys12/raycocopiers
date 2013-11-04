@@ -11,8 +11,8 @@
 		<li><a href=" {{ url('/products/printer/bw') }} ">Black and White Printers</a></li>
 		<li><a href=" {{ url('/products/mfp/color') }} ">Color MFPs</a></li>
 		<li><a href=" {{ url('/products/printer/color') }} ">Color Printers</a></li>
-		<li><a href=" {{ url('/products/wideformat') }} ">Wide Formats</a></li>
-		<li><a href=" {{ url('/products/duplicator') }} ">Duplicators</a></li>
+		<li><a href=" {{ url('/products/wideformat/bw') }} ">Wide Formats</a></li>
+		<li><a href=" {{ url('/products/duplicator/bw') }} ">Duplicators</a></li>
 	</nav>
 </section>
 
