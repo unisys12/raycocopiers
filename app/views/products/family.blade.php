@@ -10,7 +10,7 @@
 		@foreach($product as $item)
 		<img src= "/raycocopiers/public/images/products/{{ $item->family }}/{{ $item->color_class }}/{{ $item->model }}.jpg" alt="{{ $item->model }}">
 		<h6>{{ $item->model }}</h6>
-		<a href="{{ $item->family }}/{{ $item->model }}">Want more info?</a>
+		<a href="{{ $item->color_class }}/{{ $item->model }}">Want more info?</a>
 		<hr>
 		@endforeach
 	</article>
