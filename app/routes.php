@@ -34,9 +34,9 @@ Route::get('/customers', array('as' => 'customers', 'uses' => 'CustomerControlle
 
 Route::get('/products/create', array('as' => 'createProduct', 'uses' => 'ProductController@create'));
 
-Route::get('/products/{family}/{model}', array('uses' => 'ProductController@showModel'));
+Route::get('/products/{family}/{color_class}/{model}', array('uses' => 'ProductController@showModel'));
 
-Route::get('/products/{family}', array('uses' => 'ProductController@showFamily'));
+Route::get('/products/{family}/{color_class}', array('uses' => 'ProductController@showFamily'));
 
 Route::get('/products/store', array('as' => 'storedproduct', 'uses' => 'ProductController@store'));
 Route::post('/products/store', array('as' => 'storeproduct', 'uses' => 'ProductController@store'));
