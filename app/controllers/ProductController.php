@@ -77,19 +77,28 @@ class ProductController extends BaseController {
 		//
 	}
 
-	public function showFamily($family)
+	public function showFamily($family, $color_class)
 	{
-		$product = $this->product->getFamily($family);
+		$product = $this->product->where('family', '=', $family)
+								 ->where('color_class', '=', $color_class)
+								 ->get();
+
 		return View::make('products.family')
-			->with('product', $product)
-			->with('family', $family);
+			->with('family', $family)
+			->with('color_class', $color_class)
+			->with('product', $product);
 	}
 
-	public function showModel($family, $model)
+	public function showModel($family, $color_class, $model)
 	{
-		$product = $this->product->where('family', '=', $family)->where('name', '=', $model)->get();
-		return View::make('products.model')/*->with('product', $product)*/
+		$product = $this->product->where('family', '=', $family)
+								 ->where('color_class', '=', $color_class)
+								 ->where('model', '=', $model)
+								 ->get();
+
+		return View::make('products.model')
 			->with('family', $family)
+			->with('color_class', $color_class)
 			->with('model', $model)
 			->with('product', $product);
 	}
