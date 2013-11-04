@@ -7,12 +7,12 @@
 		<h3></h3>
 	</header>
 	<nav class="ul">
-		<li><a href="/products/bw/mfp">Black and White MPFs</a></li>
-		<li><a href="/products/bw/printer">Black and White Printers</a></li>
-		<li><a href="/products/color/mfp">Color MFPs</a></li>
-		<li><a href="/products/color/printer">Color Printers</a></li>
-		<li><a href="/products/wideformat">Wide Formats</a></li>
-		<li><a href="/products/duplicator">Duplicators</a></li>
+		<li><a href=" {{ url('/products/mfp/bw') }} ">Black and White MPFs</a></li>
+		<li><a href=" {{ url('/products/printer/bw') }} ">Black and White Printers</a></li>
+		<li><a href=" {{ url('/products/mfp/color') }} ">Color MFPs</a></li>
+		<li><a href=" {{ url('/products/printer/color') }} ">Color Printers</a></li>
+		<li><a href=" {{ url('/products/wideformat') }} ">Wide Formats</a></li>
+		<li><a href=" {{ url('/products/duplicator') }} ">Duplicators</a></li>
 	</nav>
 </section>
 
