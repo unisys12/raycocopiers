@@ -2,7 +2,7 @@
 
 @section('content')
 	<section class="large-8 columns">
-		<header>
+		<header class="header">
 			<h3>Rayco Inc</h3>
 		</header>
 
