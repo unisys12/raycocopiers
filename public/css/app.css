@@ -428,16 +428,6 @@ figure {
   list-style: none;
 }
 
-/* line 2, ../sass/_misc.scss */
-.header h3, footer h3 {
-  font-family: 'noto_sansregular', arial, sans-serif;
-}
-
-/* line 7, ../sass/_misc.scss */
-.posts {
-  font-family: 'open_sanslight';
-}
-
 /* line 1, ../sass/_content.scss */
 .content, .posts {
   text-align: justify;
@@ -480,38 +470,6 @@ figure {
   -moz-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
-}
-
-@font-face {
-  font-family: 'noto_sansregular';
-  src: url("fonts/notosans-regular-webfont.eot");
-  src: url("fonts/notosans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/notosans-regular-webfont.svg#noto_sansregular") format("svg"), url("fonts/notosans-regular-webfont.woff") format("woff"), url("fonts/notosans-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sanslight';
-  src: url("fonts/opensans-light-webfont.eot");
-  src: url("fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-light-webfont.svg#open_sanslight") format("svg"), url("fonts/opensans-light-webfont.woff") format("woff"), url("fonts/opensans-light-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sansregular';
-  src: url("fonts/opensans-regular-webfont.eot");
-  src: url("fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-regular-webfont.svg#open_sansregular") format("svg"), url("fonts/opensans-regular-webfont.woff") format("woff"), url("fonts/opensans-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'open_sanssemibold';
-  src: url("fonts/opensans-semibold-webfont.eot");
-  src: url("fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-semibold-webfont.woff") format("woff"), url("fonts/opensans-semibold-webfont.ttf") format("truetype"), url("fonts/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 
 /* line 264, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
