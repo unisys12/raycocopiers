@@ -1,0 +1,105 @@
+/* Noto Sans */
+@font-face {
+    font-family: 'noto_sansregular';
+    src: url('fonts/notosans-regular-webfont.eot');
+    src: url('fonts/notosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('fonts/notosans-regular-webfont.svg#noto_sansregular') format('svg'),
+         url('fonts/notosans-regular-webfont.woff') format('woff'),
+         url('fonts/notosans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Open Sans */
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans-light-webfont.eot');
+    src: url('fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-light-webfont.svg#open_sanslight') format('svg'),
+         url('fonts/opensans-light-webfont.woff') format('woff'),
+         url('fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('fonts/opensans-semibold-webfont.eot');
+    src: url('fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg'),
+         url('fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('fonts/opensans-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Arimo */
+@font-face {
+    font-family: 'arimobold_italic';
+    src: url('fonts/arimo-bolditalic-webfont.eot');
+    src: url('fonts/arimo-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arimo-bolditalic-webfont.woff') format('woff'),
+         url('fonts/arimo-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/arimo-bolditalic-webfont.svg#arimobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arimoitalic';
+    src: url('fonts/arimo-italic-webfont.eot');
+    src: url('fonts/arimo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arimo-italic-webfont.woff') format('woff'),
+         url('fonts/arimo-italic-webfont.ttf') format('truetype'),
+         url('fonts/arimo-italic-webfont.svg#arimoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arimoregular';
+    src: url('fonts/arimo-regular-webfont.eot');
+    src: url('fonts/arimo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arimo-regular-webfont.svg#arimoregular') format('svg'),
+         url('fonts/arimo-regular-webfont.woff') format('woff'),
+         url('fonts/arimo-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* New Cycle */
+@font-face {
+    font-family: 'news_cyclebold';
+    src: url('fonts/newscycle-bold-webfont.eot');
+    src: url('fonts/newscycle-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/newscycle-bold-webfont.svg#news_cyclebold') format('svg'),
+         url('fonts/newscycle-bold-webfont.woff') format('woff'),
+         url('fonts/newscycle-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'news_cycleregular';
+    src: url('fonts/newscycle-regular-webfont.eot');
+    src: url('fonts/newscycle-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/newscycle-regular-webfont.svg#news_cycleregular') format('svg'),
+         url('fonts/newscycle-regular-webfont.woff') format('woff'),
+         url('fonts/newscycle-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

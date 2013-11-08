@@ -58,12 +58,14 @@
 		</nav>
 		<hr />
 	</header>
-	<main class="row content">
+	<main class="row">
 
 		@yield('content')
 
 		<aside class="large-4 columns posts">
-			<h3>NEWS</h3>
+			<header class="content_header">
+				<h3>NEWS</h3>
+			</header>
 			<h4>7/3/2012</h4>
 			<hr>
 			<p>Welcome to the new Rayco Inc website. I have put a lot of the things that I have recently learned
