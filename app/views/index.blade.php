@@ -6,7 +6,7 @@
 			<h3>Rayco Inc</h3>
 		</header>
 
-		<article class="">
+		<article class="content">
 			<p>
 				<em>Rayco Inc</em> has offices in Corinth, Oxford and Tupelo Mississippi. We are
 				Mississippi owned company that started in 1994. There are a lot of changes coming from
@@ -39,7 +39,7 @@
 				Ikon and its employees will be missed in Mississippi.
 			</p>
 			<p>Sincerely,<br>
-			Rayco Inc Ownership</p>
+			<p>Rayco Inc Ownership</p>
 		</article>
 	</section>
 @stop
