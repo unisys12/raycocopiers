@@ -13,6 +13,7 @@
 				<h1><a href="{{ Wardrobe::route('/') }}">{{ site_title() }}</a></h1>
 				<nav>
 					<ul>
+						<li><a href="{{ route('home') }}">Rayco Inc</a></li>
 						<li><a href="{{ Wardrobe::route('posts.archive') }}">Posts</a></li>
 						<li><a href="{{ Wardrobe::route('posts.rss') }}">RSS</a></li>
 					</ul>
