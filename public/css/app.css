@@ -525,6 +525,217 @@ figure {
   text-align: justify;
 }
 
+/** Animation Specfic stuff related to carousel
+  * All of the following mixins were built by me
+  * so... blame me if they don't work
+  **/
+@-webkit-keyframes cycle-images {
+  /* line 56, ../sass/_carousel.scss */
+  10%, 35% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 61, ../sass/_carousel.scss */
+  40%, 65% {
+    -webkit-transform: translateY(-301px);
+    -moz-transform: translateY(-301px);
+    -ms-transform: translateY(-301px);
+    -o-transform: translateY(-301px);
+    transform: translateY(-301px);
+  }
+
+  /* line 66, ../sass/_carousel.scss */
+  70%, 100% {
+    -webkit-transform: translateY(-570px);
+    -moz-transform: translateY(-570px);
+    -ms-transform: translateY(-570px);
+    -o-transform: translateY(-570px);
+    transform: translateY(-570px);
+  }
+}
+
+@-moz-keyframes cycle-images {
+  /* line 56, ../sass/_carousel.scss */
+  10%, 35% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 61, ../sass/_carousel.scss */
+  40%, 65% {
+    -webkit-transform: translateY(-301px);
+    -moz-transform: translateY(-301px);
+    -ms-transform: translateY(-301px);
+    -o-transform: translateY(-301px);
+    transform: translateY(-301px);
+  }
+
+  /* line 66, ../sass/_carousel.scss */
+  70%, 100% {
+    -webkit-transform: translateY(-570px);
+    -moz-transform: translateY(-570px);
+    -ms-transform: translateY(-570px);
+    -o-transform: translateY(-570px);
+    transform: translateY(-570px);
+  }
+}
+
+@-ms-keyframes cycle-images {
+  /* line 56, ../sass/_carousel.scss */
+  10%, 35% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 61, ../sass/_carousel.scss */
+  40%, 65% {
+    -webkit-transform: translateY(-301px);
+    -moz-transform: translateY(-301px);
+    -ms-transform: translateY(-301px);
+    -o-transform: translateY(-301px);
+    transform: translateY(-301px);
+  }
+
+  /* line 66, ../sass/_carousel.scss */
+  70%, 100% {
+    -webkit-transform: translateY(-570px);
+    -moz-transform: translateY(-570px);
+    -ms-transform: translateY(-570px);
+    -o-transform: translateY(-570px);
+    transform: translateY(-570px);
+  }
+}
+
+@keyframes cycle-images {
+  /* line 56, ../sass/_carousel.scss */
+  10%, 35% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 61, ../sass/_carousel.scss */
+  40%, 65% {
+    -webkit-transform: translateY(-301px);
+    -moz-transform: translateY(-301px);
+    -ms-transform: translateY(-301px);
+    -o-transform: translateY(-301px);
+    transform: translateY(-301px);
+  }
+
+  /* line 66, ../sass/_carousel.scss */
+  70%, 100% {
+    -webkit-transform: translateY(-570px);
+    -moz-transform: translateY(-570px);
+    -ms-transform: translateY(-570px);
+    -o-transform: translateY(-570px);
+    transform: translateY(-570px);
+  }
+}
+
+/* line 71, ../sass/_carousel.scss */
+.carousel {
+  height: 15em;
+  overflow: hidden;
+  padding: 2em 0;
+}
+
+/* line 78, ../sass/_carousel.scss */
+.image > img {
+  -webkit-animation-name: cycle-images;
+  -moz-animation-name: cycle-images;
+  -o-animation-name: cycle-images;
+  animation-name: cycle-images;
+  -webkit-animation-duration: 15s;
+  -moz-animation-duration: 15s;
+  -o-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  padding-bottom: 1em;
+}
+
+/* line 83, ../sass/_carousel.scss */
+.img-one > figcaption {
+  padding-bottom: 7.75em;
+  -webkit-animation-name: cycle-images;
+  -moz-animation-name: cycle-images;
+  -o-animation-name: cycle-images;
+  animation-name: cycle-images;
+  -webkit-animation-duration: 15s;
+  -moz-animation-duration: 15s;
+  -o-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* line 88, ../sass/_carousel.scss */
+.img-two > figcaption {
+  padding-bottom: 7.75em;
+  -webkit-animation-name: cycle-images;
+  -moz-animation-name: cycle-images;
+  -o-animation-name: cycle-images;
+  animation-name: cycle-images;
+  -webkit-animation-duration: 15s;
+  -moz-animation-duration: 15s;
+  -o-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* line 93, ../sass/_carousel.scss */
+.img-three > figcaption {
+  padding-bottom: 7.75em;
+  -webkit-animation-name: cycle-images;
+  -moz-animation-name: cycle-images;
+  -o-animation-name: cycle-images;
+  animation-name: cycle-images;
+  -webkit-animation-duration: 15s;
+  -moz-animation-duration: 15s;
+  -o-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
 /* line 1, ../sass/_footer.scss */
 .contact {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 82, 156, 0.5)), color-stop(100%, #3e3e3e));
