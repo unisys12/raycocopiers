@@ -65,13 +65,15 @@
 		@yield('content')
 
 		<aside class="large-4 columns posts">
-			<header class="content_header">
-				<h3>NEWS</h3>
-			</header>
-			<h4>7/3/2012</h4>
-			<hr>
-			<p>Welcome to the new Rayco Inc website. I have put a lot of the things that I have recently learned
-			into this site and will be adding more as time goes on. The main section I will be working on is the Customer section. Take a look around and be on the look out for more updates coming soon.</p>
+			<article class="posts">
+		      @foreach($posts as $post)
+		      <h5><a href="{{ url('blog'). '/post/' . $post->slug }}" class="bal-links">{{ $post->title }}</a></h5>
+		      <hr />
+		      <small>{{ $post->publish_date }}</small>
+
+		      <p>{{ $post->content }}</p>
+		      @endforeach
+		    </article>
 		</aside>
 	</main>
 	<footer class="row">

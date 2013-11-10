@@ -14,7 +14,7 @@
 // About route (http://www.raycocopiers.com/about)
 Route::get('/about', array('as' => 'about', function()
 {
-	return View::make('about');
+	return View::make('about')->with('posts', Post::getPosts());
 }));
 
 /* Customer Routes
@@ -39,6 +39,7 @@ Route::get('/products/{family}/{color_class}/{model}', array('uses' => 'ProductC
 Route::get('/products/{family}/{color_class}', array('uses' => 'ProductController@showFamily'));
 
 Route::get('/products/store', array('as' => 'storedproduct', 'uses' => 'ProductController@store'));
+
 Route::post('/products/store', array('as' => 'storeproduct', 'uses' => 'ProductController@store'));
 
 Route::get('/products', array('as' => 'products', 'uses' => 'ProductController@index'));
@@ -46,5 +47,5 @@ Route::get('/products', array('as' => 'products', 'uses' => 'ProductController@i
 // Index Route (http://www.raycocopiers.com)
 Route::get('/', array('as' => 'home', function()
 {
-	return View::make('index');
+	return View::make('index')->with('posts', Post::getPosts());
 }));

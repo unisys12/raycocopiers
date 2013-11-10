@@ -4,12 +4,12 @@ class CustomerController extends BaseController {
 
 	public function showIndex()
 	{
-		return View::make('customers.index');
+		return View::make('customers.index')->with('posts', Post::getPosts());;
 	}
 
 	public function showMeterForm()
 	{
-		return View::make('customers.meterform');
+		return View::make('customers.meterform')->with('posts', Post::getPosts());;
 	}
 
 	public function meterSubmit()
@@ -27,9 +27,11 @@ class CustomerController extends BaseController {
 		if($validator->fails())
 		{
 			$messages = $validator->messages();
-			return View::make('customers.meterform')->withErrors($messages);
+			return View::make('customers.meterform')
+			->withErrors($messages)
+			->with('posts', Post::getPosts());
 		}
-		return View::make('customers.metersubmit');
+		return View::make('customers.metersubmit')->with('posts', Post::getPosts());;
 	}
 
 }

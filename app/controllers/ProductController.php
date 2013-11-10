@@ -15,7 +15,7 @@ class ProductController extends BaseController {
 	public function index()
 	{
 		// http://www.raycocopiers.com/products
-		return View::make('products.index');
+		return View::make('products.index')->with('posts', Post::getPosts());
 	}
 
 	/**
@@ -63,7 +63,7 @@ class ProductController extends BaseController {
 
 		$product = Product::create($data);
 
-		return View::make('products.store');
+		return View::make('products.store')->with('posts', Post::getPosts());
 	}
 
 	/**
@@ -86,7 +86,8 @@ class ProductController extends BaseController {
 		return View::make('products.family')
 			->with('family', $family)
 			->with('color_class', $color_class)
-			->with('product', $product);
+			->with('product', $product)
+			->with('posts', Post::getPosts());
 	}
 
 	public function showModel($family, $color_class, $model)
@@ -100,7 +101,8 @@ class ProductController extends BaseController {
 			->with('family', $family)
 			->with('color_class', $color_class)
 			->with('model', $model)
-			->with('product', $product);
+			->with('product', $product)
+			->with('posts', Post::getPosts());
 	}
 
 	/**
