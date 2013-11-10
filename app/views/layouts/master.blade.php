@@ -54,6 +54,8 @@
 				<li><a href="http://www.raycocopiers.net">Services</a></li>
 				<li><a href="{{ route('customers') }}">Customers</a></li>
 				<li><a href="{{ route('about') }}">About Us</a></li>
+				<li><a href="{{ url('/blog') }}">Blog</a></li>
+
 			</ul>
 		</nav>
 		<hr />
@@ -83,7 +85,7 @@
 			</ul>
 
 			<nav class="footer-menu">
-				<a href="{{ route('home') }}">Home</a> - <a href="{{ route('products') }}">Products</a> - <a href="http://www.raycocopiers.com/comingsoon.html">Services</a> - <a href="{{ route('customers') }}">Customers</a> - <a href="{{ route('about') }}">About Us</a>
+				<a href="{{ route('home') }}">Home</a> - <a href="{{ route('products') }}">Products</a> - <a href="http://www.raycocopiers.com/comingsoon.html">Services</a> - <a href="{{ route('customers') }}">Customers</a> - <a href="{{ route('about') }}">About Us</a> - <a href="{{ url('/blog') }}">Blog</a>
 			</nav>
 		</section>
 		<small>&copy; Copyright  by Phillip Jackson</small>
