@@ -67,11 +67,12 @@
 		<aside class="large-4 columns posts">
 			<article class="posts">
 		      @foreach($posts as $post)
-		      <h5><a href="{{ url('blog'). '/post/' . $post->slug }}" class="bal-links">{{ $post->title }}</a></h5>
+		      <h5><a href="{{ url('blog'). '/post/' . $post->slug }}">{{ $post->title }}</a></h5>
 		      <hr />
 		      <small>{{ $post->publish_date }}</small>
 
-		      <p>{{ $post->content }}</p>
+		      <!-- <p>{{ $post->content }}</p> -->
+		      <p>{{ substr($post->content, 0, 300) }}</p>
 		      @endforeach
 		    </article>
 		</aside>
