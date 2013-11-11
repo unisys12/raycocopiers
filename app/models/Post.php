@@ -7,7 +7,7 @@ Class Post extends Eloquent {
 	public static function getPosts()
 	{
 		//return $posts = Post::all();
-		return DB::table('posts')->take(3)->orderBy('publish_date', 'desc')->get();
+		return DB::table('posts')->take(2)->orderBy('publish_date', 'desc')->get();
 	}
 
 }
