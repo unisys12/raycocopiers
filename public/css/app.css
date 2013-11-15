@@ -589,20 +589,20 @@ figure img {
 
   /* line 61, ../sass/_carousel.scss */
   40%, 65% {
-    -webkit-transform: translateY(-301px);
-    -moz-transform: translateY(-301px);
-    -ms-transform: translateY(-301px);
-    -o-transform: translateY(-301px);
-    transform: translateY(-301px);
+    -webkit-transform: translateY(-330px);
+    -moz-transform: translateY(-330px);
+    -ms-transform: translateY(-330px);
+    -o-transform: translateY(-330px);
+    transform: translateY(-330px);
   }
 
   /* line 66, ../sass/_carousel.scss */
   70%, 100% {
-    -webkit-transform: translateY(-570px);
-    -moz-transform: translateY(-570px);
-    -ms-transform: translateY(-570px);
-    -o-transform: translateY(-570px);
-    transform: translateY(-570px);
+    -webkit-transform: translateY(-630px);
+    -moz-transform: translateY(-630px);
+    -ms-transform: translateY(-630px);
+    -o-transform: translateY(-630px);
+    transform: translateY(-630px);
   }
 }
 
@@ -618,20 +618,20 @@ figure img {
 
   /* line 61, ../sass/_carousel.scss */
   40%, 65% {
-    -webkit-transform: translateY(-301px);
-    -moz-transform: translateY(-301px);
-    -ms-transform: translateY(-301px);
-    -o-transform: translateY(-301px);
-    transform: translateY(-301px);
+    -webkit-transform: translateY(-330px);
+    -moz-transform: translateY(-330px);
+    -ms-transform: translateY(-330px);
+    -o-transform: translateY(-330px);
+    transform: translateY(-330px);
   }
 
   /* line 66, ../sass/_carousel.scss */
   70%, 100% {
-    -webkit-transform: translateY(-570px);
-    -moz-transform: translateY(-570px);
-    -ms-transform: translateY(-570px);
-    -o-transform: translateY(-570px);
-    transform: translateY(-570px);
+    -webkit-transform: translateY(-630px);
+    -moz-transform: translateY(-630px);
+    -ms-transform: translateY(-630px);
+    -o-transform: translateY(-630px);
+    transform: translateY(-630px);
   }
 }
 
@@ -647,20 +647,20 @@ figure img {
 
   /* line 61, ../sass/_carousel.scss */
   40%, 65% {
-    -webkit-transform: translateY(-301px);
-    -moz-transform: translateY(-301px);
-    -ms-transform: translateY(-301px);
-    -o-transform: translateY(-301px);
-    transform: translateY(-301px);
+    -webkit-transform: translateY(-330px);
+    -moz-transform: translateY(-330px);
+    -ms-transform: translateY(-330px);
+    -o-transform: translateY(-330px);
+    transform: translateY(-330px);
   }
 
   /* line 66, ../sass/_carousel.scss */
   70%, 100% {
-    -webkit-transform: translateY(-570px);
-    -moz-transform: translateY(-570px);
-    -ms-transform: translateY(-570px);
-    -o-transform: translateY(-570px);
-    transform: translateY(-570px);
+    -webkit-transform: translateY(-630px);
+    -moz-transform: translateY(-630px);
+    -ms-transform: translateY(-630px);
+    -o-transform: translateY(-630px);
+    transform: translateY(-630px);
   }
 }
 
@@ -676,20 +676,20 @@ figure img {
 
   /* line 61, ../sass/_carousel.scss */
   40%, 65% {
-    -webkit-transform: translateY(-301px);
-    -moz-transform: translateY(-301px);
-    -ms-transform: translateY(-301px);
-    -o-transform: translateY(-301px);
-    transform: translateY(-301px);
+    -webkit-transform: translateY(-330px);
+    -moz-transform: translateY(-330px);
+    -ms-transform: translateY(-330px);
+    -o-transform: translateY(-330px);
+    transform: translateY(-330px);
   }
 
   /* line 66, ../sass/_carousel.scss */
   70%, 100% {
-    -webkit-transform: translateY(-570px);
-    -moz-transform: translateY(-570px);
-    -ms-transform: translateY(-570px);
-    -o-transform: translateY(-570px);
-    transform: translateY(-570px);
+    -webkit-transform: translateY(-630px);
+    -moz-transform: translateY(-630px);
+    -ms-transform: translateY(-630px);
+    -o-transform: translateY(-630px);
+    transform: translateY(-630px);
   }
 }
 
@@ -697,10 +697,9 @@ figure img {
 .carousel {
   height: 15em;
   overflow: hidden;
-  padding: 2em 0;
 }
 
-/* line 78, ../sass/_carousel.scss */
+/* line 77, ../sass/_carousel.scss */
 .image > img {
   -webkit-animation-name: cycle-images;
   -moz-animation-name: cycle-images;
@@ -718,10 +717,10 @@ figure img {
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
 }
 
-/* line 83, ../sass/_carousel.scss */
+/* line 82, ../sass/_carousel.scss */
 .img-one > figcaption {
   padding-bottom: 7.75em;
   -webkit-animation-name: cycle-images;
@@ -742,7 +741,7 @@ figure img {
   animation-iteration-count: infinite;
 }
 
-/* line 88, ../sass/_carousel.scss */
+/* line 87, ../sass/_carousel.scss */
 .img-two > figcaption {
   padding-bottom: 7.75em;
   -webkit-animation-name: cycle-images;
@@ -763,7 +762,7 @@ figure img {
   animation-iteration-count: infinite;
 }
 
-/* line 93, ../sass/_carousel.scss */
+/* line 92, ../sass/_carousel.scss */
 .img-three > figcaption {
   padding-bottom: 7.75em;
   -webkit-animation-name: cycle-images;

@@ -59,12 +59,12 @@
 
 	// 5% gap(from 35% to 40%) sets speed to move first image out and second up into place
 	40%, 65% {
-		@include transform2d(translateY(-301px)); // move second image into place
+		@include transform2d(translateY(-330px)); // move second image into place
 	}
 
 	// Stopping the animation at 100% allows for clean transition to first image at end
 	70%, 100% {
-		@include transform2d(translateY(-570px)); // move third image up into place
+		@include transform2d(translateY(-630px)); // move third image up into place
 	}
 }
 
@@ -72,12 +72,11 @@
 	// border: 1px solid rgba(0,0,0,0.5); //used to display image box
 	height: 15em;
 	overflow: hidden;
-	padding: 2em 0;
 }
 
 .image >img {
 	@include carousel;
-	padding-bottom: 1em;
+	padding-bottom: .5em;
 }
 
 .img-one > figcaption {
