@@ -429,14 +429,15 @@ table {
 .body {
   /* @include background-image(linear-gradient(top, #FFDA73, white)); */
   background-image: filter-gradient(#ffda73, white, vertical);
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffda73), color-stop(20%, #ffffff), color-stop(60%, #ffffff), color-stop(100%, #ffda73));
-  background-image: -webkit-linear-gradient(left, #ffda73, #ffffff 20%, #ffffff, #ffda73);
-  background-image: -moz-linear-gradient(left, #ffda73, #ffffff 20%, #ffffff, #ffda73);
-  background-image: -o-linear-gradient(left, #ffda73, #ffffff 20%, #ffffff, #ffda73);
-  background-image: linear-gradient(left, #ffda73, #ffffff 20%, #ffffff, #ffda73);
+  /* @include background-image(linear-gradient(left, #FFDA73, white 20%, white, #FFDA73)); */
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1921b1), color-stop(20%, #ffffff), color-stop(60%, #ffffff), color-stop(100%, #1921b1));
+  background-image: -webkit-linear-gradient(left, #1921b1, #ffffff 20%, #ffffff, #1921b1);
+  background-image: -moz-linear-gradient(left, #1921b1, #ffffff 20%, #ffffff, #1921b1);
+  background-image: -o-linear-gradient(left, #1921b1, #ffffff 20%, #ffffff, #1921b1);
+  background-image: linear-gradient(left, #1921b1, #ffffff 20%, #ffffff, #1921b1);
 }
 
-/* line 17, ../sass/_overrides.scss */
+/* line 18, ../sass/_overrides.scss */
 .row {
   background-color: #fff;
 }
@@ -785,17 +786,17 @@ figure img {
 
 /* line 1, ../sass/_footer.scss */
 .contact {
-  background-image: -webkit-gradient(radial, 145px 145px, 0, 145px 145px, 500, color-stop(40%, #ffda73), color-stop(100%, #ffcd40));
-  background-image: -webkit-radial-gradient(145px 145px, #ffda73 200px, #ffcd40 500px);
-  background-image: -moz-radial-gradient(145px 145px, #ffda73 200px, #ffcd40 500px);
-  background-image: -o-radial-gradient(145px 145px, #ffda73 200px, #ffcd40 500px);
-  background-image: radial-gradient(145px 145px, #ffda73 200px, #ffcd40 500px);
+  background-image: -webkit-gradient(radial, 145px 145px, 0, 145px 145px, 500, color-stop(40%, rgba(0, 82, 156, 0.5)), color-stop(100%, #3e3e3e));
+  background-image: -webkit-radial-gradient(145px 145px, rgba(0, 82, 156, 0.5) 200px, #3e3e3e 500px);
+  background-image: -moz-radial-gradient(145px 145px, rgba(0, 82, 156, 0.5) 200px, #3e3e3e 500px);
+  background-image: -o-radial-gradient(145px 145px, rgba(0, 82, 156, 0.5) 200px, #3e3e3e 500px);
+  background-image: radial-gradient(145px 145px, rgba(0, 82, 156, 0.5) 200px, #3e3e3e 500px);
 }
-/* line 3, ../sass/_footer.scss */
+/* line 4, ../sass/_footer.scss */
 .contact a {
   color: #fff;
 }
-/* line 5, ../sass/_footer.scss */
+/* line 6, ../sass/_footer.scss */
 .contact a:hover {
   color: #333;
   -webkit-transition: 0.2s linear;
@@ -803,17 +804,17 @@ figure img {
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
-/* line 10, ../sass/_footer.scss */
+/* line 11, ../sass/_footer.scss */
 .contact li {
   list-style: none;
   font-size: .95em;
 }
 
-/* line 16, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
 .footer-menu {
   padding-bottom: .25em;
 }
-/* line 18, ../sass/_footer.scss */
+/* line 19, ../sass/_footer.scss */
 .footer-menu a:hover {
   color: #aeaeae;
   -webkit-transition: 0.2s linear;

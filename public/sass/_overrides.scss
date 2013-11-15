@@ -11,7 +11,8 @@
 .body {
   /* @include background-image(linear-gradient(top, #FFDA73, white)); */
   @include background-image(filter-gradient(#FFDA73, white, vertical));
-  @include background-image(linear-gradient(left, #FFDA73, white 20%, white, #FFDA73));
+  /* @include background-image(linear-gradient(left, #FFDA73, white 20%, white, #FFDA73)); */
+  @include background-image(linear-gradient(left, #1921B1, white 20%, white, #1921B1));
 }
 
 .row {
