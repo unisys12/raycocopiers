@@ -1,5 +1,5 @@
 .contact {
-
+	@include background-image(radial-gradient(145px 145px, #FFDA73 200px, #FFCD40 500px));
 	a{
 		color: #fff;
 		&:hover {

@@ -1,4 +1,14 @@
 .content, .posts {
 	text-align: justify;
+	line-height: 1.5em;
 }
 
+.posts {
+	@extend .links;
+	a{color: #A67A00;}
+	a:hover {
+		color: shade(#A67A00, 20%);
+	}
+	color: shade(#BF9A30, 50%);
+
+}

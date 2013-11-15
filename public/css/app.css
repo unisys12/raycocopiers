@@ -412,6 +412,35 @@ table {
   border-spacing: 0;
 }
 
+/* line 2, ../sass/_overrides.scss */
+.links a, .menu a, .posts a {
+  color: #1921B1;
+}
+/* line 4, ../sass/_overrides.scss */
+.links a:hover, .menu a:hover, .posts a:hover {
+  color: #4D54D8;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+/* line 11, ../sass/_overrides.scss */
+.body {
+  /* @include background-image(linear-gradient(top, #FFDA73, white)); */
+  background-image: filter-gradient(#ffda73, white, vertical);
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffda73), color-stop(20%, #ffffff), color-stop(60%, #ffffff), color-stop(100%, #ffda73));
+  background-image: -webkit-linear-gradient(left, #ffda73, #ffffff 20%, #ffffff, #ffda73);
+  background-image: -moz-linear-gradient(left, #ffda73, #ffffff 20%, #ffffff, #ffda73);
+  background-image: -o-linear-gradient(left, #ffda73, #ffffff 20%, #ffffff, #ffda73);
+  background-image: linear-gradient(left, #ffda73, #ffffff 20%, #ffffff, #ffda73);
+}
+
+/* line 17, ../sass/_overrides.scss */
+.row {
+  background-color: #fff;
+}
+
 /* Noto Sans */
 @font-face {
   font-family: 'noto_sansregular';
@@ -508,21 +537,39 @@ header > h3 {
 figure {
   display: inline;
 }
+/* line 3, ../sass/_header.scss */
+figure img {
+  padding-top: 1em;
+}
 
-/* line 5, ../sass/_header.scss */
+/* line 8, ../sass/_header.scss */
 .savin {
   padding-left: 4em;
 }
 
-/* line 9, ../sass/_header.scss */
+/* line 15, ../sass/_header.scss */
 .menu li {
-  margin-top: 1em;
+  margin-top: 2em;
   list-style: none;
 }
 
 /* line 1, ../sass/_content.scss */
 .content, .posts {
   text-align: justify;
+  line-height: 1.5em;
+}
+
+/* line 6, ../sass/_content.scss */
+.posts {
+  color: #5f4d18;
+}
+/* line 8, ../sass/_content.scss */
+.posts a {
+  color: #A67A00;
+}
+/* line 9, ../sass/_content.scss */
+.posts a:hover {
+  color: #846100;
 }
 
 /** Animation Specfic stuff related to carousel
@@ -738,11 +785,11 @@ figure {
 
 /* line 1, ../sass/_footer.scss */
 .contact {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 82, 156, 0.5)), color-stop(100%, #3e3e3e));
-  background: -webkit-linear-gradient(top, rgba(0, 82, 156, 0.5), #3e3e3e);
-  background: -moz-linear-gradient(top, rgba(0, 82, 156, 0.5), #3e3e3e);
-  background: -o-linear-gradient(top, rgba(0, 82, 156, 0.5), #3e3e3e);
-  background: linear-gradient(top, rgba(0, 82, 156, 0.5), #3e3e3e);
+  background-image: -webkit-gradient(radial, 145px 145px, 0, 145px 145px, 500, color-stop(40%, #ffda73), color-stop(100%, #ffcd40));
+  background-image: -webkit-radial-gradient(145px 145px, #ffda73 200px, #ffcd40 500px);
+  background-image: -moz-radial-gradient(145px 145px, #ffda73 200px, #ffcd40 500px);
+  background-image: -o-radial-gradient(145px 145px, #ffda73 200px, #ffcd40 500px);
+  background-image: radial-gradient(145px 145px, #ffda73 200px, #ffcd40 500px);
 }
 /* line 3, ../sass/_footer.scss */
 .contact a {

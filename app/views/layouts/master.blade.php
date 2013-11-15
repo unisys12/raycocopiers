@@ -29,7 +29,7 @@
 		    + '.js><\/script>');
 		</script>
 	</head>
-<body>
+<body class="body">
 	<header class="row">
 		<section class="large-6 columns" >
 			<figure>

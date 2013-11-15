@@ -1,0 +1,19 @@
+.links {
+	a {
+		color: #1921B1;
+		&:hover {
+			color: #4D54D8;
+			@include transition(.2s linear);
+		}
+	}
+}
+
+.body {
+  /* @include background-image(linear-gradient(top, #FFDA73, white)); */
+  @include background-image(filter-gradient(#FFDA73, white, vertical));
+  @include background-image(linear-gradient(left, #FFDA73, white 20%, white, #FFDA73));
+}
+
+.row {
+	background-color: #fff;
+}

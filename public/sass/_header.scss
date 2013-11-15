@@ -1,12 +1,19 @@
 figure {
 	display: inline;
+	img {
+		padding-top: 1em;
+	}
 }
 
 .savin {
 	padding-left: 4em;
 }
 
-.menu li {
-	margin-top: 1em;
+.menu {
+	@extend .links;
+
+	li {
+	margin-top: 2em;
 	list-style: none;
+	}
 }

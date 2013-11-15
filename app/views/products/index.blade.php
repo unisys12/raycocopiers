@@ -6,7 +6,7 @@
 	<header>
 		<h3></h3>
 	</header>
-	<nav class="ul">
+	<nav class="content">
 		<li><a href=" {{ url('/products/mfp/bw') }} ">Black and White MPFs</a></li>
 		<li><a href=" {{ url('/products/printer/bw') }} ">Black and White Printers</a></li>
 		<li><a href=" {{ url('/products/mfp/color') }} ">Color MFPs</a></li>
