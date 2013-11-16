@@ -42,15 +42,7 @@
 		<nav class="large-6 columns">
 			<ul class="inline-list menu">
 				<li><a href="{{ route('home') }}">Home</a></li>
-				<li><a href="{{ route('products') }}">Products</a>
-					<!-- <ul class="subMenu">
-						<li><a href="http://www.raycocopiers.com/products/bwmfp.php">B\W MFPs</a></li>
-						<li><a href="http://www.raycocopiers.com/products/bwprinters.php">B\W Printers</a></li>
-						<li><a href="http://www.raycocopiers.com/products/colormfp.php">Color MFPs</a></li>
-						<li><a href="http://www.raycocopiers.com/products/colorprinters.php">Color Printers</a></li>
-						<li><a href="http://www.raycocopiers.com/products/wideformat.php">Wide Format</a></li>
-						<li><a href="http://www.raycocopiers.com/products/scanner.php">Scanners</a></li>
-					</ul> --></li>
+				<li><a href="{{ route('products') }}">Products</a></li>
 				<li><a href="http://www.raycocopiers.net">Services</a></li>
 				<li><a href="{{ route('customers') }}">Customers</a></li>
 				<li><a href="{{ route('about') }}">About Us</a></li>
