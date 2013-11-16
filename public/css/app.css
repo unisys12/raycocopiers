@@ -412,32 +412,41 @@ table {
   border-spacing: 0;
 }
 
-/* line 2, ../sass/_overrides.scss */
+/* .links {
+	a {
+		color: #1921B1;
+		&:hover {
+			color: #4D54D8;
+			@include transition(.2s linear);
+		}
+	}
+} */
+/* line 12, ../sass/_overrides.scss */
 .links a, .menu a, .posts a {
-  color: #1921B1;
+  color: #A67A00;
 }
-/* line 4, ../sass/_overrides.scss */
+/* line 15, ../sass/_overrides.scss */
 .links a:hover, .menu a:hover, .posts a:hover {
-  color: #4D54D8;
+  color: #846100;
   -webkit-transition: 0.2s linear;
   -moz-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
-/* line 11, ../sass/_overrides.scss */
+/* line 22, ../sass/_overrides.scss */
 .body {
   /* @include background-image(linear-gradient(top, #FFDA73, white)); */
   background-image: filter-gradient(#ffda73, white, vertical);
   /* @include background-image(linear-gradient(left, #FFDA73, white 20%, white, #FFDA73)); */
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1921b1), color-stop(20%, #ffffff), color-stop(60%, #ffffff), color-stop(100%, #1921b1));
-  background-image: -webkit-linear-gradient(left, #1921b1, #ffffff 20%, #ffffff, #1921b1);
-  background-image: -moz-linear-gradient(left, #1921b1, #ffffff 20%, #ffffff, #1921b1);
-  background-image: -o-linear-gradient(left, #1921b1, #ffffff 20%, #ffffff, #1921b1);
-  background-image: linear-gradient(left, #1921b1, #ffffff 20%, #ffffff, #1921b1);
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #1921b1), color-stop(30%, #ffffff), color-stop(65%, #ffffff), color-stop(100%, #1921b1));
+  background-image: -webkit-linear-gradient(left, #1921b1, #ffffff 30%, #ffffff, #1921b1);
+  background-image: -moz-linear-gradient(left, #1921b1, #ffffff 30%, #ffffff, #1921b1);
+  background-image: -o-linear-gradient(left, #1921b1, #ffffff 30%, #ffffff, #1921b1);
+  background-image: linear-gradient(left, #1921b1, #ffffff 30%, #ffffff, #1921b1);
 }
 
-/* line 18, ../sass/_overrides.scss */
+/* line 29, ../sass/_overrides.scss */
 .row {
   background-color: #fff;
 }
@@ -543,12 +552,12 @@ figure img {
   padding-top: 1em;
 }
 
-/* line 8, ../sass/_header.scss */
+/* line 12, ../sass/_header.scss */
 .savin {
   padding-left: 4em;
 }
 
-/* line 15, ../sass/_header.scss */
+/* line 19, ../sass/_header.scss */
 .menu li {
   margin-top: 2em;
   list-style: none;
@@ -562,15 +571,11 @@ figure img {
 
 /* line 6, ../sass/_content.scss */
 .posts {
+  /* a{color: #A67A00;}
+  a:hover {
+  	color: shade(#A67A00, 20%);
+  } */
   color: #5f4d18;
-}
-/* line 8, ../sass/_content.scss */
-.posts a {
-  color: #A67A00;
-}
-/* line 9, ../sass/_content.scss */
-.posts a:hover {
-  color: #846100;
 }
 
 /** Animation Specfic stuff related to carousel
