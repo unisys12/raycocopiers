@@ -1,8 +1,19 @@
-.links {
+/* .links {
 	a {
 		color: #1921B1;
 		&:hover {
 			color: #4D54D8;
+			@include transition(.2s linear);
+		}
+	}
+} */
+
+.links {
+	a{
+		color: #A67A00;
+
+		&:hover {
+			color: shade(#A67A00, 20%);
 			@include transition(.2s linear);
 		}
 	}
@@ -12,7 +23,7 @@
   /* @include background-image(linear-gradient(top, #FFDA73, white)); */
   @include background-image(filter-gradient(#FFDA73, white, vertical));
   /* @include background-image(linear-gradient(left, #FFDA73, white 20%, white, #FFDA73)); */
-  @include background-image(linear-gradient(left, #1921B1, white 20%, white, #1921B1));
+  @include background-image(linear-gradient(left, #1921B1, white 30%, white, #1921B1));
 }
 
 .row {
