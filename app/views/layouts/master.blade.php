@@ -88,7 +88,6 @@
 <!-- End Main Content/Container -->
 
 	<script type="text/javascript">
-/*
 	  var _gaq = _gaq || [];
 	  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
 	  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
@@ -101,7 +100,6 @@
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
-*/
 	</script>
 
 	</body>
