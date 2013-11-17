@@ -8,7 +8,7 @@
 	</header>
 	<article class="family">
 		@foreach($product as $item)
-		<img src= "/raycocopiers/public/images/products/{{ $item->family }}/{{ $item->color_class }}/{{ $item->model }}.jpg" alt="{{ $item->model }}">
+		<img src= "/raycocopiers/public/images/products/{{ $item->family }}/{{ $item->color_class }}/{{ strtoupper($item->model) }}.jpg" alt="{{ $item->model }}">
 		<h6>{{ $item->model }}</h6>
 		<a href="{{ $item->color_class }}/{{ $item->model }}">Want more info?</a>
 		<hr>
