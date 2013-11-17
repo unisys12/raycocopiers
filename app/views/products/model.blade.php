@@ -8,7 +8,7 @@
 	</header>
 	<article class="model">
 		@foreach($product as $item)
-		<img src= "/raycocopiers/public/images/products/{{ $item->family }}/{{ $item->color_class }}/{{ $item->model }}.jpg" alt="{{ $item->model }}" class="left">
+		<img src= "http://raycocopiers.com/images/products/{{ $item->family }}/{{ $item->color_class }}/{{ strtoupper($item->model) }}.jpg" alt="{{ $item->model }}" class="left">
 		<div class="large-6 columns description">
 			<ul>
 				<li>{{ $item->comment_one }}</li>
