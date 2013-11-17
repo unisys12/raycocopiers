@@ -43,7 +43,7 @@ class ProductController extends BaseController {
 		$rules = array(
 			'model'			=> 'required|alpha_num',
 			'color_class'	=> 'required',
-			'family'		=> 'required|alpha',
+			'family'		=> 'required',
 			'ppmbw'			=> 'required|integer',
 			'ppmcolor'		=> 'integer',
 			'comment_one' 	=> 'required',
