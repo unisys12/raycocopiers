@@ -47,7 +47,6 @@
 				<li><a href="{{ route('customers') }}">Customers</a></li>
 				<li><a href="{{ route('about') }}">About Us</a></li>
 				<li><a href="{{ url('/blog') }}">Blog</a></li>
-
 			</ul>
 		</nav>
 		<hr />
@@ -62,8 +61,7 @@
 		      <h5><a href="{{ url('blog'). '/post/' . $post->slug }}">{{ $post->title }}</a></h5>
 		      <hr />
 		      <small>{{ $post->publish_date }}</small>
-
-		      <!-- <p>{{ $post->content }}</p> -->
+		      <!-- Use substr() to limit post display. O = offset, 300 = num chars to display per return -->
 		      <p>{{ substr($post->content, 0, 300) }}</p>
 		      @endforeach
 		    </article>
