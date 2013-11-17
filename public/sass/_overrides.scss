@@ -13,7 +13,7 @@
 		color: #A67A00;
 
 		&:hover {
-			color: shade(#A67A00, 20%);
+			color: shade(#A67A00, 30%);
 			@include transition(.2s linear);
 		}
 	}
