@@ -28,7 +28,7 @@
 		'' => '',
 		'mfp' 			=> 'MFP',
 		'printer' 		=> 'Printer',
-		'wide format' 	=> 'Wide Format',
+		'wideformat' 	=> 'Wide Format',
 		'duplicator' 	=> 'Duplicator',
 		'scanner'		=> 'Scanner'
 		)) }}
