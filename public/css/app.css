@@ -814,6 +814,12 @@ figure img {
   font-size: .95em;
 }
 
+/* line 2, ../sass/_goose.scss */
+.goose li {
+  list-style: none;
+  padding-left: 1em;
+}
+
 /* line 264, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
 *,
 *:before,

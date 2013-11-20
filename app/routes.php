@@ -11,6 +11,11 @@
 |
 */
 
+// Gooses Guide Routes
+Route::post('/goosesguide/prod/prob', array('as' => 'res', 'uses' => 'GoosesGuide@problemResolution'));
+Route::post('/goosesguide/prod', array('as' => 'prob', 'uses' => 'GoosesGuide@problemDescription'));
+Route::get('/goosesguide', array('as' => 'goose', 'uses' => 'GoosesGuide@index'));
+
 // About route (http://www.raycocopiers.com/about)
 Route::get('/about', array('as' => 'about', function()
 {
