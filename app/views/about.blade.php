@@ -8,7 +8,7 @@
 	</header>
 
 	<article>
-		<em>Rayco Inc</em> is a indepently owned Savin dealership. We are located in Corinth, MS and is proud to serve all of Mississippi as well as a large portion of Tennesse and Alabama. We have been in business for well over 15 years and cannot wait to serve you. Please give us a call or come by anytime.
+		<em>Rayco Inc</em> is a independent Savin dealership. We are located in Corinth, MS and is proud to serve all of Mississippi as well as a large portion of Tennessee and Alabama. We have been in business for well over 15 years and cannot wait to serve you. Please give us a call or come by anytime.
 	</article>
 
 	<article>
