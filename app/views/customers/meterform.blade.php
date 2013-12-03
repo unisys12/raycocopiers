@@ -10,6 +10,14 @@
 
 		<ul>
 			<li>
+				{{ Form::label('name', 'Customer Name')}}
+				{{ Form::text('name') }}
+			</li>
+			<li>
+				{{ Form::label('email', 'Customer Email') }}
+				{{ Form::email('email') }}
+			</li>
+			<li>
 				{{ Form::label('CNumber', 'C Number') }}
 				{{ Form::text('CNumber') }}
 			</li>

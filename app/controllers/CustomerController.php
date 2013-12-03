@@ -17,6 +17,8 @@ class CustomerController extends BaseController {
 		$data = Input::all();
 
 		$rules = array(
+			'name'		  => 'required',
+			'email'		  => 'required',
 			'CNumber'	  => 'required|numeric|min:4',
 			'colorTotal'  => 'numeric',
 			'bwTotal'	  => 'required|numeric'
@@ -31,7 +33,13 @@ class CustomerController extends BaseController {
 			->withErrors($messages)
 			->with('posts', Post::getPosts());
 		}
-		return View::make('customers.metersubmit')->with('posts', Post::getPosts());;
+
+		Mail::later(30,'emails.customers.meter', $data, function($message) use($data){
+			$message->to($data['email'], $data['name'])->subject('Meter Reading Submission Test');
+		});
+
+		return View::make('customers.metersubmit')
+			->with('posts', Post::getPosts());
 	}
 
 }
