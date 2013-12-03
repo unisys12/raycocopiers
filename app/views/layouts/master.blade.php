@@ -56,15 +56,17 @@
 		@yield('content')
 
 		<aside class="large-4 columns posts">
-			<article class="posts">
-		      @foreach($posts as $post)
+
+	      @foreach($posts as $post)
+	      <article class="post">
 		      <h5><a href="{{ url('blog'). '/post/' . $post->slug }}">{{ $post->title }}</a></h5>
 		      <hr />
 		      <small>{{ $post->publish_date }}</small>
 		      <!-- Use substr() to limit post display. O = offset, 300 = num chars to display per return -->
 		      <p>{{ substr($post->content, 0, 300) }}</p>
-		      @endforeach
-		    </article>
+	      </article>
+	      @endforeach
+
 		</aside>
 	</main>
 	<footer class="row">

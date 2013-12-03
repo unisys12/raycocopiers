@@ -10,5 +10,23 @@
 		color: shade(#A67A00, 20%);
 	} */
 	color: shade(#BF9A30, 50%);
+}
+
+// single-box-shadow($color, $hoff, $voff, $blur, $spread, $inset)
+.post {
+	margin-bottom: .25em;
+	padding: 1em;
+	@include single-box-shadow(rgba(128,128,128,0.2), 1px, -5px, 50px, 1px, inset);
+	&:before {
+
+	}
+
+	&:after {
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+		@include single-box-shadow(rgba(0,0,0,0.9), 1px, -5px, 10px, 2px);
+		@include border-bottom-radius(.25em);
+	}
+
+
 
 }
