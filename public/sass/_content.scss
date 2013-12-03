@@ -1,6 +1,9 @@
 .content, .posts {
 	text-align: justify;
 	line-height: 1.5em;
+	li {
+		list-style: none;
+	}
 }
 
 .posts {
