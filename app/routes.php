@@ -27,7 +27,7 @@ Route::get('/about', array('as' => 'about', function()
  * ****************/
 Route::post('/customers/metersubmit', array('as' => 'metersubmited', 'uses' => 'CustomerController@meterSubmit'));
 
-Route::post('/customers/metersubmit', array('as' => 'metersubmit', 'uses' => 'CustomerController@meterSubmit'));
+Route::get('/customers/metersubmit', array('as' => 'metersubmit', 'uses' => 'CustomerController@meterSubmit'));
 
 Route::get('/customers/meter', array('as' => 'meter', 'uses' => 'CustomerController@showMeterForm' ));
 
