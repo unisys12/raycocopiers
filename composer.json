@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.0.*",
-		"wardrobe/core": "1.1.*"
+		"wardrobe/core": "1.1.*",
+		"iron-io/iron_mq": "dev-master",
 	},
 	"autoload": {
 		"classmap": [
