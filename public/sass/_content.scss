@@ -13,6 +13,8 @@
 		color: shade(#A67A00, 20%);
 	} */
 	color: shade(#BF9A30, 50%);
+	overflow: hidden;
+	text-overflow:ellipsis;
 }
 
 // single-box-shadow($color, $hoff, $voff, $blur, $spread, $inset)
