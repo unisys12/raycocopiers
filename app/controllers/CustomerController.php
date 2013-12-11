@@ -18,10 +18,10 @@ class CustomerController extends BaseController {
 
 		$rules = array(
 			'name'		  => 'required',
-			'email'		  => 'required',
-			'CNumber'	  => 'required|numeric|min:4',
+			'email'		  => 'required | email',
+			'CNumber'	  => 'required | numeric | min:4',
 			'colorTotal'  => 'numeric',
-			'bwTotal'	  => 'required|numeric'
+			'bwTotal'	  => 'required | numeric'
 			);
 
 		$validator = Validator::make($data, $rules);
@@ -29,8 +29,10 @@ class CustomerController extends BaseController {
 		if($validator->fails())
 		{
 			$messages = $validator->messages();
-			return View::make('customers.meterform')
+
+			return Redirect::to('customers/meter')
 			->withErrors($messages)
+			->withInput()
 			->with('posts', Post::getPosts());
 		}
 

@@ -13,18 +13,21 @@
 				{{ Form::label('name', 'Customer Name')}}
 				{{ Form::text('name') }}
 			</li>
+			{{ $errors->first('name', '<span class="error"> :message </span>') }}
+
 			<li>
 				{{ Form::label('email', 'Customer Email') }}
 				{{ Form::email('email') }}
 			</li>
+			{{ $errors->first('email', '<span class="error"> :message </span>') }}
+
 			<li>
 				{{ Form::label('CNumber', 'C Number') }}
-				{{ Form::text('CNumber') }}
+				{{ Form::text('CNumber', Input::old('CNumber'), array('placeholder' => 'Ex: 1234 Not C1234')) }}
 			</li>
 			{{ $errors->first('CNumber', '<span class="error"> :message </span>') }}
 
 			<li>
-
 				{{ Form::label('colorTotal', 'Color Total') }}
 				{{ Form::text('colorTotal') }}
 			</li>
