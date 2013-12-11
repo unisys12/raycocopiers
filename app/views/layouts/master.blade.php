@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Load Rayco Favicon -->
-		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="shortcut icon" href=" {{ asset('/favicon.ico') }} " />
 
 		<!-- Calls to the single compiled and compressed CSS file -->
 		<link rel="stylesheet" href="{{ asset('css/app.css') }}" />
@@ -22,12 +22,12 @@
 		<!-- Call to load custom modernizer script, which checks for and add HTML5 shims where needed for older browsers -->
 		<script src="{{ asset('js/vendor/custom.modernizr.js') }}"></script>
 
-		<!-- Check for Zepto support, load jQuery if necessary -->
+		<!-- Check for Zepto support, load jQuery if necessary
 		<script>
 		  document.write('<script src= /js/vendor/'
 		    + ('__proto__' in {} ? 'zepto' : 'jquery')
 		    + '.js><\/script>');
-		</script>
+		</script> -->
 	</head>
 <body class="body">
 	<header class="row">
