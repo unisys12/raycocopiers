@@ -18,12 +18,9 @@
 	</head>
 <body>
 	<header class="row">
-		<section class="large-6 columns" >
+		<section class="large-12 columns" >
 			<figure>
 				<img src="{{ asset('images/logos/Rayco_logo_bw.png') }}" class="rayco" alt="Rayco Logo"/>
-			</figure>
-			<figure>
-				<img src="{{ asset('images/logos/savin_logo.png') }}" class="savin" alt="Savin Logo" />
 			</figure>
 		</section>
 
