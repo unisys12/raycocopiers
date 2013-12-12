@@ -42,17 +42,17 @@ return array(
 
 		'sqs' => array(
 			'driver' => 'sqs',
-			'key'    => 'your-public-key',
-			'secret' => 'your-secret-key',
-			'queue'  => 'your-queue-url',
-			'region' => 'us-east-1',
+			'key'    => 'AKIAIZDWP5GLXDQKFO5A',
+			'secret' => 'X6jLMEg0PJCHsFMQ4dn1kPuo5NXlAJJrcUgQId7P',
+			'queue'  => 'https://sqs.us-west-2.amazonaws.com/522588239378/que-test',
+			'region' => 'us-west-2',
 		),
 
 		'iron' => array(
 			'driver'  => 'iron',
-			'project' => 'your-project-id',
-			'token'   => 'your-token',
-			'queue'   => 'your-queue-name',
+			'project' => '529d6000897e950005000030',
+			'token'   => 'FGylLDFnEOYzDT2W_H09bcmkkOQ',
+			'queue'   => 'meter-submission',
 		),
 
 	),
