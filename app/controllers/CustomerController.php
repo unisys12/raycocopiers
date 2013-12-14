@@ -36,7 +36,7 @@ class CustomerController extends BaseController {
 			->with('posts', Post::getPosts());
 		}
 
-		Mail::later(30,'emails.customers.meter', $data, function($message) use($data){
+		Mail::send('emails.customers.meter', $data, function($message) use($data){
 			$message->to($data['email'], $data['name'])->subject('Meter Reading Submission Test');
 		});
 
