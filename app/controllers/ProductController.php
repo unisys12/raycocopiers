@@ -138,4 +138,51 @@ class ProductController extends BaseController {
 		//
 	}
 
+	/**
+	 * Retrieve model info from view, display form prefilled with info from view
+	 */
+	public function info()
+	{
+		$model = Request::query('model');
+		return View::make('products.info_form')
+			->with('model', $model)
+			->with('posts', Post::getPosts());
+	}
+
+	public function send_request()
+	{
+		$data = Input::all();
+
+		$rules = array(
+			'name' => 'required',
+			'email' => 'required|email',
+			'product' => 'required|alpha_num',
+			'users' => 'required|integer|min:1'
+			);
+
+		$validator = Validator::make($data, $rules);
+
+		if($validator->fails())
+		{
+			$messages = $validator->messages();
+			return Redirect::to(route('info_form'))
+				->withErrors($messages)
+				->withInput()
+				->with('posts', Post::getPosts()
+			);
+		}
+
+		Mail::send('emails.customers.info_request', $data, function($message) use ($data)
+		{
+			$message->to('sales@raycocopiers.com', $data['name'])
+					->subject($data['name'] . ' would like some info on one of our products!')
+					->from($data['email']);
+		});
+
+		return View::make('products.request_sent')
+			->with('data', $data)
+			->with('posts', Post::getPosts());
+
+	}
+
 }

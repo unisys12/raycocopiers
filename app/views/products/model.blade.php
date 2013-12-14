@@ -19,7 +19,7 @@
 			</ul>
 		@endforeach
 		</div>
+		<h6>Want to contact one of our sales staff about this product? This <a href="{{ route('info_form') }}?model={{ $model }}" title="Model Info Link">form</a> can help!</h6>
 	</article>
 </section>
-
 @stop

@@ -606,6 +606,11 @@ figure img {
   border-bottom-right-radius: 0.25em;
 }
 
+/* line 38, ../sass/_content.scss */
+.model p {
+  padding-left: 2em;
+}
+
 /** Animation Specfic stuff related to carousel
   * All of the following mixins were built by me
   * so... blame me if they don't work
