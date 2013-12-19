@@ -68,7 +68,7 @@ return array(
     | Set this to your sites title
     |
     */
-    'title' => 'Rayco Blog',
+    'title' => 'Rayco Inc Blog',
 
     /*
     |--------------------------------------------------------------------------
