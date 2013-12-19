@@ -41,7 +41,7 @@
 				<li>2199 Hwy 72 East; Corinth, MS 38834</li>
 			</ul>
 
-			<a href="{{ route('home') }}">Home</a> - <a href="{{ route('products') }}">Products</a> - <a href="http://www.raycocopiers.com/comingsoon.html">Services</a> - <a href="{{ route('customers') }}">Customers</a> - <a href="{{ route('about') }}">About Us</a>
+			<a href="{{ route('home') }}">Home</a> - <a href="{{ route('products') }}">Products</a> - <a href="http://www.raycocopiers.net">Services</a> - <a href="{{ route('customers') }}">Customers</a> - <a href="{{ route('about') }}">About Us</a>
 		</section>
 		<small>&copy; Copyright  by Phillip Jackson</small>
 	</footer>
