@@ -20,9 +20,9 @@
 		<link rel="stylesheet" href="{{ asset('css/app.css') }}" />
 
 		<!-- Call to load custom modernizer script, which checks for and add HTML5 shims where needed for older browsers -->
-		<!-- <script src="{{ asset('js/vendor/custom.modernizr.js') }}"></script>
+		<script src="{{ asset('js/vendor/custom.modernizr.js') }}"></script>
 
-		Check for Zepto support, load jQuery if necessary
+		<!-- Check for Zepto support, load jQuery if necessary
 		<script>
 		  document.write('<script src= /js/vendor/'
 		    + ('__proto__' in {} ? 'zepto' : 'jquery')
@@ -56,17 +56,9 @@
 		@yield('content')
 
 		<aside class="large-4 columns posts">
-
-	      @foreach($posts as $post)
-	      <article class="post">
-		      <h5><a href="{{ url('blog'). '/post/' . $post->slug }}">{{ $post->title }}</a></h5>
-		      <hr />
-		      <small>{{ $post->publish_date }}</small>
-		      <!-- Use substr() to limit post display. O = offset, 300 = num chars to display per return -->
-		      <p>{{ substr($post->content, 0, 300) }}</p>
-	      </article>
-	      @endforeach
-
+			<article class="post">
+				<h5>Looks like we really broke this one. Umm, why don't you try another link from the menu and we promise to do better this time.</h5>
+			</article>
 		</aside>
 	</main>
 	<footer class="row">
@@ -80,18 +72,14 @@
 			</ul>
 
 			<nav class="footer-menu">
-				<a href="{{ route('home') }}">Home</a> - <a href="{{ route('products') }}">Products</a> - <a href="http://www.raycocopiers.net">Services</a> - <a href="{{ route('customers') }}">Customers</a> - <a href="{{ route('about') }}">About Us</a> - <a href="{{ url('/blog') }}">Blog</a>
+				<a href="{{ route('home') }}">Home</a> - <a href="{{ route('products') }}">Products</a> - <a href="http://www.raycocopiers.com/comingsoon.html">Services</a> - <a href="{{ route('customers') }}">Customers</a> - <a href="{{ route('about') }}">About Us</a> - <a href="{{ url('/blog') }}">Blog</a>
 			</nav>
 		</section>
 		<small>&copy; Copyright  by Phillip Jackson</small>
 	</footer>
 <!-- End Main Content/Container -->
 
-<<<<<<< HEAD
-	<!-- New Universal Analytics Script -->
-=======
 	<!-- New Universal Analytics Script
->>>>>>> origin/develop
 		<script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -100,11 +88,7 @@
 
          ga('create', 'UA-36848345-1', 'raycocopiers.com');
          ga('send', 'pageview');
-<<<<<<< HEAD
-        </script>
-=======
         </script> -->
->>>>>>> origin/develop
 
 	</body>
 </html>

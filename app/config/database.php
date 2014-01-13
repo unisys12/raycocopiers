@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'raycocopiers',
+			'database'  => 'rayco_news',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',
