@@ -20,9 +20,9 @@
 		<link rel="stylesheet" href="{{ asset('css/app.css') }}" />
 
 		<!-- Call to load custom modernizer script, which checks for and add HTML5 shims where needed for older browsers -->
-		<script src="{{ asset('js/vendor/custom.modernizr.js') }}"></script>
+		<!-- <script src="{{ asset('js/vendor/custom.modernizr.js') }}"></script>
 
-		<!-- Check for Zepto support, load jQuery if necessary
+		Check for Zepto support, load jQuery if necessary
 		<script>
 		  document.write('<script src= /js/vendor/'
 		    + ('__proto__' in {} ? 'zepto' : 'jquery')
