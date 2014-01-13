@@ -2,7 +2,7 @@
 
 @section('content')
 	<section class="large-8 columns">
-		<article class="carousel">
+		<article class="carousel show-for-large-up">
 			<figure class="image img-one">
 				<img src=" {{ asset('images/banners/Multifunction.jpg') }} " alt="Multifunction Banner">
 				<figcaption>Rayco offers a full line of Savin Black&White and Color MPFs. Please, take a look around and let's us know any questions you might have.</figcaption>
