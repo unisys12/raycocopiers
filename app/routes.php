@@ -69,3 +69,15 @@ Route::get('/', array('as' => 'home', function()
 {
 	return View::make('index')->with('posts', Post::getPosts());
 }));
+
+/*
+|---------------------------
+| Create Custom 404 Page
+|---------------------------
+|
+*/
+
+App::missing(function($exception)
+{
+    return Response::view('404', array(), 404);
+});
