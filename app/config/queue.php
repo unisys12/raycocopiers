@@ -40,21 +40,6 @@ return array(
 			'queue'  => 'default',
 		),
 
-		'sqs' => array(
-			'driver' => 'sqs',
-			'key'    => 'AKIAIZDWP5GLXDQKFO5A',
-			'secret' => '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',
-			'queue'  => 'https://sqs.us-west-2.amazonaws.com/522588239378/que-test',
-			'region' => 'us-west-2',
-		),
-
-		'iron' => array(
-			'driver'  => 'iron',
-			'project' => '529d6000897e950005000030',
-			'token'   => 'FGylLDFnEOYzDT2W_H09bcmkkOQ',
-			'queue'   => 'meter-submission',
-		),
-
 	),
 
 );
